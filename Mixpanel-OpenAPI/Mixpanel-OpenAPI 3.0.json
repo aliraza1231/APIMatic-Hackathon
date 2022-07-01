@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "Mixpanel Export API",
+    "title": "Mixpanel Export API - Test GH Workflow",
     "contact": {},
     "version": "1.0"
   },
