@@ -6,7 +6,7 @@ on:
     branches: 
       - master 
     paths: 
-      - 'spec/**'   
+      - 'Mixpanel-OpenAPI/**'   
 
 jobs:
   update-portal:
