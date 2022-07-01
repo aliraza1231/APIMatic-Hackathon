@@ -1,0 +1,25 @@
+name: Update Portal
+
+on:
+  workflow_dispatch:  
+  push:
+    branches: 
+      - master 
+    paths: 
+      - 'Mixpanel-OpenAPI/**'   
+
+jobs:
+  update-portal:
+    runs-on: ubuntu-latest
+
+    steps:
+    
+    - uses: actions/checkout@v1
+      name : checkout-repo
+      id: checkout-repo     
+     
+    - name: inplace-import
+      run: curl -X PUT --url 'https://www.apimatic.io/api/api-entities/${{ secrets.API_ENTITY_ID }}' -H 'content-type:multipart/form-data' -H 'Authorization:X-Auth-Key ${{ secrets.API_KEY }}' -F 'file=@Mixpanel-OpenAPI/Mixpanel-OpenAPI 3.0.json'
+      
+    - name: publish-portal
+      run: curl --location --request PUT 'https://www.apimatic.io/api/api-entities/${{ secrets.API_ENTITY_ID }}/portal/publish' -H 'Content-Length:0' -H 'Authorization:X-Auth-Key ${{ secrets.API_KEY }}'
