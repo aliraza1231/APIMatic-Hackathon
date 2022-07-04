@@ -12,7 +12,7 @@
     }
   ],
   "paths": {
-    "/export/ali-22": {
+    "/export": {
       "get": {
         "tags": [
           "Export Data"
