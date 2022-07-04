@@ -48,7 +48,7 @@
             "name": "limit",
             "in": "query",
             "description": "The max number of events to be returned.",
-            "required": true,
+            "required": false,
             "style": "form",
             "explode": true,
             "schema": {
@@ -61,7 +61,7 @@
             "name": "event",
             "in": "query",
             "description": "The event or events that you wish to get data for, encoded as a JSON array.",
-            "required": true,
+            "required": false,
             "style": "form",
             "explode": true,
             "schema": {
