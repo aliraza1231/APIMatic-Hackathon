@@ -19,7 +19,7 @@ jobs:
       id: checkout-repo     
      
     - name: inplace-import
-      run: curl -X PUT --url 'https://www.apimatic.io/api/api-entities/62bed9a2546037b895e0ba10' -H 'content-type:multipart/form-data' -H 'Authorization:X-Auth-Key g1o41GewIgru8y2utp5pyAWoopnWqV9m9JmDWdbFMwXqEh_ZSLJyzmkyMUYdVPkA' -F 'file=@Mixpanel-OpenAPI/Mixpanel-OpenAPI 3.0.json'
+      run: curl -X PUT --url 'https://www.apimatic.io/api/api-entities/62bed9a2546037b895e0ba10' -H 'content-type:multipart/form-data' -H 'Authorization:X-Auth-Key wcBLEuKMKPb7QNap7Z5KQfQEd0lzJh2n-Vngc9BzLRWhKNKyB3MVRVa9oiJTULAU' -F 'file=@Mixpanel-OpenAPI/Mixpanel-OpenAPI 3.0.json'
       
     - name: publish-portal
-      run: curl --location --request PUT 'https://www.apimatic.io/api/api-entities/62bed9a2546037b895e0ba10/portal/publish' -H 'Content-Length:0' -H 'Authorization:X-Auth-Key g1o41GewIgru8y2utp5pyAWoopnWqV9m9JmDWdbFMwXqEh_ZSLJyzmkyMUYdVPkA'
+      run: curl --location --request PUT 'https://www.apimatic.io/api/api-entities/62bed9a2546037b895e0ba10/portal/publish' -H 'Content-Length:0' -H 'Authorization:X-Auth-Key wcBLEuKMKPb7QNap7Z5KQfQEd0lzJh2n-Vngc9BzLRWhKNKyB3MVRVa9oiJTULAU'
