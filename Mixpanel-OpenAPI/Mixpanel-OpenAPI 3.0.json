@@ -65,13 +65,8 @@
             "style": "form",
             "explode": true,
             "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              },
-              "example": [
-                "SignUp"
-              ]
+              "type": "string"
+              "example": "%5B%22SignUp%22%5D"
             }
           },
           {
